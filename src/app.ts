@@ -11,15 +11,16 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigins = [
-  'http://localhost:4200',
-  process.env.FRONTEND_URL
-].filter(Boolean);
 
 app.use(cors({
   origin: true,
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+
+app.options('*', cors());
 
 app.use(express.json());
 
