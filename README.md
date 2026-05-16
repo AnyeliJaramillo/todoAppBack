@@ -209,17 +209,6 @@ http://localhost:4200
 
 ---
 
-# 🌍 Variables de entorno
-
-## Backend `.env`
-
-```env
-PORT=3000
-MONGO_URI=TU_URI_MONGODB
-JWT_SECRET=TU_SECRET
-FRONTEND_URL=http://localhost:4200
-```
-
 ⚠️ El archivo `.env` no fue subido al repositorio por seguridad.
 
 ---
